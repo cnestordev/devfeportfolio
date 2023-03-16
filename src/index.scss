@@ -49,13 +49,52 @@ table {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2.6rem;
+
+    .nav-items {
+        display: flex;
+
+        .nav-item {
+            color: #f0f0f0;
+            padding: 0.5rem 1.2rem;
+        }
+    }
 }
 
-.navbar .nav-items {
-    display: flex;
-}
+.skills-section {
+    background-color: #f8f8ff;
 
-.navbar .nav-items .nav-item {
-    color: #f0f0f0;
-    padding: 0.5rem 1.2rem;
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .skills-container {
+        border: 1px solid red;
+        display: flex;
+
+        .image img {
+            width: 20%;
+        }
+
+        .skill-set {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .skill-box {
+                border-radius: 8px;
+                background: rgb(255, 255, 255);
+                width: 40%;
+                padding: 4%;
+                line-height: 1.5;
+                box-sizing: border-box;
+                margin: 1px 2%;
+
+                h3 {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,81 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: 'Martian Mono', monospace;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.navbar {
+  display: flex;
+  background-color: #121212;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2.6rem; }
+  .navbar .nav-items {
+    display: flex; }
+    .navbar .nav-items .nav-item {
+      color: #f0f0f0;
+      padding: 0.5rem 1.2rem; }
+
+.skills-section {
+  background-color: #f8f8ff; }
+  .skills-section h2 {
+    font-size: 2rem;
+    text-align: center; }
+  .skills-section .skills-container {
+    border: 1px solid red;
+    display: flex; }
+    .skills-section .skills-container .image img {
+      width: 20%; }
+    .skills-section .skills-container .skill-set {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap; }
+      .skills-section .skills-container .skill-set .skill-box {
+        border-radius: 8px;
+        background: white;
+        width: 40%;
+        padding: 4%;
+        line-height: 1.5;
+        box-sizing: border-box;
+        margin: 1px 2%; }
+        .skills-section .skills-container .skill-set .skill-box h3 {
+          font-size: 1.6rem;
+          font-weight: bold; }
