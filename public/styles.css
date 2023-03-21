@@ -139,7 +139,9 @@ table {
       margin: 1px 2%; }
       .skills-container .skill-set .skill-box h3 {
         font-size: 1.6rem;
-        font-weight: bold; }
+        font-weight: bold; 
+      }
 
 .experience-section {
-  background-color: red; }
+  background-color: red; 
+}
