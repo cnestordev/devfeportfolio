@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +17,10 @@
       href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/58ff903b9e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section class="header">
@@ -42,59 +47,111 @@
     </section>
 
     <section class="sections skills-section">
-      <h2>Tech Skills</h2>
+      <div class="page-margin">
+        <h2>Tech Skills</h2>
 
-      <div class="skills-container">
-        <div class="image">
-          <img
-            src="https://www.nestordev.com/dev.png"
-            alt="man on desk using computer"
-          />
-        </div>
-
-        <div class="skill-set">
-          <div class="skill-box">
-            <h3>Frontend</h3>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>SCSS</p>
-            <p>JavaScript</p>
-            <p>React</p>
-            <p>Angular</p>
-            <p>Vue</p>
-            <p>EJS</p>
-            <p>Bootstrap</p>
-            <p>Styled-Components</p>
+        <div class="skills-container">
+          <div class="image">
+            <img
+              src="https://www.nestordev.com/dev.png"
+              alt="man on desk using computer"
+            />
           </div>
 
-          <div class="skill-box">
-            <h3>Backend</h3>
-            <p>Node</p>
-            <p>Express</p>
-            <p>MongoDB</p>
-            <p>MySQL</p>
-            <p>PassportJS</p>
-            <p>REST</p>
-          </div>
+          <div class="skill-set">
+            <div class="skill-box box-1">
+              <h3>Frontend</h3>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>SCSS</p>
+              <p>JavaScript</p>
+              <p>React</p>
+              <p>Angular</p>
+              <p>Vue</p>
+              <p>EJS</p>
+              <p>Bootstrap</p>
+              <p>Styled-Components</p>
+            </div>
 
-          <div class="skill-box">
-            <h3>Other</h3>
-            <p>Git</p>
-            <p>Github</p>
-            <p>Bitbucket</p>
-            <p>Figma</p>
-            <p>Notion</p>
-            <p>Adobe Photoshop</p>
-            <p>Notion</p>
-            <p>Effective Communicator</p>
-            <p>Cross-functional teams</p>
+            <div class="skill-box box-2">
+              <h3>Backend</h3>
+              <p>Node</p>
+              <p>Express</p>
+              <p>MongoDB</p>
+              <p>MySQL</p>
+              <p>PassportJS</p>
+              <p>REST</p>
+            </div>
+
+            <div class="skill-box box-3">
+              <h3>Other</h3>
+              <p>Git</p>
+              <p>Github</p>
+              <p>Bitbucket</p>
+              <p>Figma</p>
+              <p>Notion</p>
+              <p>Adobe Photoshop</p>
+              <p>Notion</p>
+              <p>Effective Communicator</p>
+              <p>Cross-functional teams</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="sections experience-section">
-      <h2>Experience</h2>
+      <div class="page-margin">
+        <h2>Experience</h2>
+        <div class="project-container">
+          <div class="project-description">
+            <div class="project-info-header">
+              <img src="../src/assets/runwaylogo.png" alt="project-logo" />
+              <p>Runway Proptech<span>Aug 2021 - Aug 2022</span></p>
+            </div>
+            <div class="project-details">
+              <p>
+                Built this project from the ground up using Angular, TypeScript,
+                Sass, and other CSS frameworks. I worked on this project
+                individually with the oversight of two senior developers, a UI
+                developer, and QA, along with the company's owner, CEO, and
+                their respective clients. This app allows clients to manage
+                their properties, lots, community maps, amenities, documents,
+                and site availability, as well as setting rules for the home
+                facade configurations.
+              </p>
+            </div>
+          </div>
+          <div class="project-presentation">
+            <div class="project-media">
+              <video width="600" controls="" class="sc-iMfspA gGzDdp">
+                <source src="../src/assets/runwayapp.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project-icons">
+              <div class="icon">
+                <i
+                  class="fab fa-angular"
+                  aria-hidden="true"
+                ></i>
+                <p>Angular</p>
+              </div>
+              <div class="icon">
+                <i class="fab fa-sass" aria-hidden="true"></i>
+                <p>Sass</p>
+              </div>
+              <div class="icon">
+                <img src="../src/assets/typescript.svg" class="sc-jhSXcr eSRiHC" />
+                <p>TypeScript</p>
+              </div>
+              <div class="icon">
+                <img src="../src/assets/primeng.svg" class="sc-jhSXcr eSRiHC" />
+                <p>PrimeNG</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
