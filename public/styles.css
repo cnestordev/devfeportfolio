@@ -128,6 +128,13 @@
 .box-3 {
   grid-column: 1 / -1; /* position in the first column and span to the last column */
   grid-row: 2 / span 1; /* position in the second row */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.box-3 h3 {
+  grid-column: 1 / span 2;
 }
 
 
@@ -141,8 +148,12 @@
   box-sizing: border-box;
 }
 .skills-container .skill-set .skill-box h3 {
-  font-size: 1.6rem;
+  font-size: 17px;
   font-weight: bold;
+}
+
+.skills-container .skill-set .skill-box p {
+  font-size: 12px;
 }
 
 .experience-section {
@@ -155,6 +166,7 @@
 
 .project-container {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -176,7 +188,7 @@
 }
 
 .project-info-header p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   color: #f1f1f1;
 }
@@ -190,15 +202,15 @@
 }
 
 .project-details {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
-  color: #f1f1f1;
+  color: #606060;
 }
 
 .project-presentation {
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 60%;
+  flex-basis: 55%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -206,6 +218,7 @@
 
 .project-presentation video {
   width: 100%;
+  border-radius: 5px;
 }
 
 .project-icons {
@@ -223,14 +236,14 @@
   display: flex;
   flex-direction: column;
   -webkit-box-align: center;
-  align-items: center;
+  align-items: flex-start;
   -webkit-box-pack: center;
   justify-content: center;
 }
 
 .project-icons .icon i, .project-icons .icon img {
-  font-size: 36px;
-  width: 36px;
+  font-size: 27px;
+  width: 27px;
 }
 
 .project-icons .icon i.fa-angular {
