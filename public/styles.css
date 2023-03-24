@@ -1,4 +1,7 @@
 :root {
+  --dark-bg-color: #121212;
+  --border-radius: 8px;
+  --dark-gray-color: #363636;
   --page-margin: 0 200px;
 }
 
@@ -9,6 +12,20 @@
   align-items: center;
   padding: 0.5rem 2.6rem;
 }
+
+.nav-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-logo .nestor-logo {
+  background: url('../src/assets/nestorlogo.svg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
 .navbar .nav-items {
   display: flex;
 }
@@ -70,9 +87,9 @@
   position: relative;
 }
 .landing .intro button {
-  border: 2px solid #363636;
+  border: 2px solid var(  --dark-gray-color);
   border-radius: 50px;
-  background: #363636;
+  background: var(  --dark-gray-color);
   color: white;
   cursor: pointer;
   padding: 1.2rem 1.8rem;
@@ -84,13 +101,13 @@
 
 .sections {
   background-color: #f8f8ff;
-  padding: 35px 0;
+  padding: 50px 0;
 }
 .sections h2 {
   font-size: 3.5rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .skills-container {
@@ -140,7 +157,7 @@
 
 
 .skills-container .skill-set .skill-box {
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   background: white;
   width: 100%;
   padding: 4%;
@@ -193,12 +210,21 @@
   color: #f1f1f1;
 }
 
+.project-info-header.light p {
+  color: #252525;
+  font-size: 25px;
+}
+
 .project-info-header p span {
   color: #686868;
   display: block;
   font-size: 10px;
   font-weight: normal;
   margin-top: 2px;
+}
+
+.project-info-header.light p span {
+  color: #383838;
 }
 
 .project-details {
@@ -210,7 +236,7 @@
 .project-presentation {
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 55%;
+  flex-basis: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,4 +284,114 @@
   color: #777;
   font-size: 10px;
   margin-top: 5px;
+}
+
+.project-section .project-icons i.fa-js-square {
+  color: #fddf17;
+}
+
+.project-section .project-icons i.fa-react {
+  color: #61dafb;
+}
+
+/* .project-slideshow {
+  border: 3px solid rgb(216, 216, 216);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.project-slideshow-body {
+  margin: 1% auto;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+} */
+
+.project-sideshow-container {
+  border: 3px solid #d8d8d8;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.project-slideshow-body {
+  margin: 1% auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.project-image {
+  width: 90%;
+  border-radius: 3px;
+  display: ${props => (props.loaded ? 'block' : 'none')};
+}
+
+.project-info {
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 2%;
+  width: 90%;
+  margin: 1% auto;
+}
+
+.project-info p {
+  color: #505050;
+  font-size: 0.9rem;
+}
+
+.project-nav-btn {
+  border: 1px solid #121212;
+  border-radius: 50px;
+  background: #121212;
+  cursor: pointer;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 2%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.project-arrow {
+  width: 4%;
+  cursor: pointer;
+  color: ${props => (props.disabled ? '#c3c3c3' : '#000')};
+  -webkit-tap-highlight-color: transparent;
+}
+
+.project-box {
+  width: 90%;
+  height: 500px;
+  background: linear-gradient(271deg, #dbdbdb, #c3c3c3);
+  background-size: 400% 400%;
+  border-radius: 3px;
+}
+
+.project-pagination {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.project-pagination .pag-dot {
+  display: block;
+  background-color: #b7b7b7;
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+}
+
+.project-pagination .pag-dot-active {
+  background-color: #22b28e;
 }

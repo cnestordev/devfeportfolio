@@ -21,12 +21,16 @@
       src="https://kit.fontawesome.com/58ff903b9e.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="./index.js"
+      defer
+    ></script>
   </head>
   <body>
     <section class="header">
       <nav class="navbar page-margin">
         <div class="nav-logo">
-          <a href="#">Nestor</a>
+          <div class="nestor-logo"></div>
         </div>
         <ul class="nav-items">
           <li class="nav-item">Home</li>
@@ -154,6 +158,65 @@
               <video width="600" controls="" class="sc-iMfspA gGzDdp">
                 <source src="../src/assets/runwayapp.mp4" type="video/mp4" />
               </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sections project-section">
+      <div class="page-margin">
+        <h2>Projects</h2>
+        <div class="project-container">
+          <div class="project-description">
+            <div class="project-info-header light">
+              <p>Threaddit<span>Aug 2021 - Aug 2022</span></p>
+            </div>
+            <div class="project-details">
+              <p>
+                I developed a social media application using React for the
+                frontend and Node/Express for the backend. The app is similar to
+                Reddit in that users can create posts, view others' posts, and
+                like and comment on posts and comments. To provide secure user
+                authentication, I utilized PassportJS. The app also features a
+                MongoDB/Mongoose database to ensure data scalability and
+                reliability.
+              </p>
+            </div>
+            <div class="project-icons">
+              <div class="icon">
+                <i class="fab fa-js-square" aria-hidden="true"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="icon">
+                <i class="fab fa-react" aria-hidden="true"></i>
+                <p>React</p>
+              </div>
+              <div class="icon">
+                <img src="../src/assets/node.svg" class="sc-jhSXcr eSRiHC" />
+                <p>Node</p>
+              </div>
+              <div class="icon">
+                <img src="../src/assets/mongo.svg" class="sc-jhSXcr eSRiHC" />
+                <p>MongoDB</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-presentation">
+            <div class="project-media">
+              <div id="project-slideshow-container" class="project-sideshow-container">
+                <div class="project-slideshow-body">
+                  <img id="project-image" class="project-image"
+                    src="../src/assets/post.png"
+                  />
+                    <i className="fas fa-arrow-right"></i>
+                  </div>
+                  <div class="project-info">
+                    <p>{description[currentIndex]}</p>
+                  </div>
+                  <div id="project-pagination" class="project-pagination"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
