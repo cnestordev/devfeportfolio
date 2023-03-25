@@ -1,10 +1,24 @@
+// Threaddit images and their respective descriptions
 const postSrcs = [
-  "../src/assets/post.png",
-  "../src/assets/authenticate.png",
-  "../src/assets/comments.png",
-  "../src/assets/create.png",
+  {
+    url: "../src/assets/post.png",
+    description: "View, like, and dislike posts",
+  },
+  {
+    url: "../src/assets/authenticate.png",
+    description: "create your own account",
+  },
+  {
+    url: "../src/assets/comments.png",
+    description: "Comment on posts that interest you",
+  },
+  {
+    url: "../src/assets/create.png",
+    description: "Create your own post and share it with others",
+  },
 ];
 
+// track the index of the image for auto sliding
 let imageIndex = 0;
 let start;
 
@@ -58,7 +72,9 @@ function detectSwipe() {
 
 function updateImage(index) {
   const image = document.getElementById("project-image");
-  image.src = postSrcs[index];
+  image.src = postSrcs[index]["url"];
+  const description = document.getElementById("project-info");
+  description.innerText = postSrcs[index]["description"];
   updatePagination(index);
 }
 
@@ -86,15 +102,15 @@ function updatePagination(index) {
 }
 
 function startAutoSlide(index) {
+  updateImage(0);
   start = setInterval(() => {
+    updateImage(index);
     if (index < postSrcs.length - 1) {
       index++;
       imageIndex = index;
-      updateImage(index);
     } else {
-      index--;
+      index = 0;
       imageIndex = index;
-      updateImage(0);
     }
   }, 3000);
 }
