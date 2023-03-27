@@ -21,3 +21,35 @@
   padding-right: 200px;
   padding-left: 200px;
 }
+
+/* Extra large desktop (1921px and up) */
+@media only screen and (min-width: 1721px) {
+  .page-padding {
+    padding-right: 350px;
+    padding-left: 350px;
+  }
+}
+
+/* Desktop (1025px - 1920px) */
+@media only screen and (min-width: 1025px) and (max-width: 1720px) {
+  .page-padding {
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+}
+
+/* Tablet (768px - 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .page-padding {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+
+/* Mobile phone (767px and below) */
+@media only screen and (max-width: 767px) {
+  .page-padding {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}

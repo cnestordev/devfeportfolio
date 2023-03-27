@@ -5,6 +5,10 @@ section.header {
   z-index: 2;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -39,4 +43,47 @@ section.header {
   background-color: #0f3624;
   color: #0feca9;
   transition: 500ms;
+}
+
+.mobile-nav {
+  display: none;
+  padding: 5px 0;
+  background-color: #121212;
+  justify-content: space-between;
+}
+.mobile-nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-nav .logo .nestor-logo {
+  background: url("../../src/assets/nestorlogo.svg") center/cover;
+  height: 50px;
+  width: 50px;
+}
+.mobile-nav .menu {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.text-gradient {
+  background: linear-gradient(36deg, #0fff9b, #137cff);
+  background-size: 200% 200%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Tablet (768px - 1024px) */
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+  }
 }/*# sourceMappingURL=navbar.css.map */

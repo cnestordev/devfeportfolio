@@ -7,6 +7,10 @@ section.header {
   z-index: 2;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -41,5 +45,45 @@ section.header {
       color: #0feca9;
       transition: 500ms;
     }
+  }
+}
+
+.mobile-nav {
+  display: none;
+  padding: 5px 0;
+  background-color: $dark-bg-color;
+  justify-content: space-between;
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nestor-logo {
+      // width: 100px;
+      // height: 100px;
+      background: url("../../src/assets/nestorlogo.svg") center / cover;
+      height: 50px;
+      width: 50px;
+    }
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+.text-gradient {
+  @include gradientText();
+}
+
+/* Tablet (768px - 1024px) */
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
   }
 }
