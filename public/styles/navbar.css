@@ -1,3 +1,10 @@
+section.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -17,7 +24,7 @@
 .navbar .nav-items {
   display: flex;
 }
-.navbar .nav-items .nav-item {
+.navbar .nav-items .nav-item a {
   color: #f0f0f0;
   cursor: pointer;
   border-radius: 5px;
@@ -25,7 +32,11 @@
   padding: 1.3rem;
   font-size: 1.7rem;
   font-weight: 500;
+  list-style: none;
+  text-decoration: none;
 }
-.navbar .nav-items .nav-item:hover {
+.navbar .nav-items .nav-item a:hover {
   background-color: #0f3624;
+  color: #0feca9;
+  transition: 500ms;
 }/*# sourceMappingURL=navbar.css.map */
