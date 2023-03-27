@@ -27,4 +27,13 @@
 }
 .projects-container .other-project-container img {
   width: 100%;
+}
+
+.projects-section {
+  position: relative;
+  padding-bottom: 250px;
+}
+.projects-section svg {
+  position: absolute;
+  bottom: 0;
 }/*# sourceMappingURL=other.css.map */

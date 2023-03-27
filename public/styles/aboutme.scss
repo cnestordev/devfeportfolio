@@ -1,0 +1,29 @@
+@import "./variables.scss";
+
+.about-me {
+  background-color: $light-yellow;
+  .about-me-container {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    .about-me-info {
+      color: $color_6;
+      font-size: 17px;
+      line-height: 1.5;
+      flex-basis: 55%;
+      display: flex;
+      align-items: center;
+    }
+    .about-me-image {
+      display: flex;
+      align-items: center;
+      flex-basis: 45%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .gradient-text {
+    @include gradientText;
+  }
+}

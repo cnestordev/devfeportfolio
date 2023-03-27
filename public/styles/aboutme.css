@@ -1,0 +1,32 @@
+.about-me {
+  background-color: #fff7e4;
+}
+.about-me .about-me-container {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+.about-me .about-me-container .about-me-info {
+  color: #383838;
+  font-size: 17px;
+  line-height: 1.5;
+  flex-basis: 55%;
+  display: flex;
+  align-items: center;
+}
+.about-me .about-me-container .about-me-image {
+  display: flex;
+  align-items: center;
+  flex-basis: 45%;
+}
+.about-me .about-me-container .about-me-image img {
+  width: 100%;
+}
+.about-me .gradient-text {
+  background: linear-gradient(36deg, #0fff9b, #137cff);
+  background-size: 200% 200%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}/*# sourceMappingURL=aboutme.css.map */

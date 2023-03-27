@@ -30,3 +30,12 @@
     }
   }
 }
+
+.projects-section {
+  position: relative;
+  padding-bottom: 250px;
+  svg {
+    position: absolute;
+    bottom: 0;
+  }
+}
