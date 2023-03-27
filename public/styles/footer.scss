@@ -1,0 +1,29 @@
+@import "./variables.scss";
+
+section.footer {
+  background-color: $dark-bg-color;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  ul {
+    width: 100%;
+    display: flex;
+    gap: 35px;
+    li {
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      font-size: 16px;
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+  #email:hover {
+    @include gradientText();
+  }
+}
+
+.gradient-text {
+  @include gradientText();
+}

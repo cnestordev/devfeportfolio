@@ -1,0 +1,37 @@
+section.footer {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+section.footer ul {
+  width: 100%;
+  display: flex;
+  gap: 35px;
+}
+section.footer ul li {
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+}
+section.footer ul li i {
+  margin-right: 5px;
+}
+section.footer #email:hover {
+  background: linear-gradient(36deg, #0fff9b, #137cff);
+  background-size: 200% 200%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.gradient-text {
+  background: linear-gradient(36deg, #0fff9b, #137cff);
+  background-size: 200% 200%;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}/*# sourceMappingURL=footer.css.map */
