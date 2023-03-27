@@ -1,0 +1,135 @@
+.project-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.project-container .project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.project-container .project-description .project-info-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.project-container .project-description .project-info-header img {
+  width: 35px;
+  margin-right: 10px;
+}
+.project-container .project-description .project-info-header p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f1f1f1;
+}
+.project-container .project-description .project-info-header p span {
+  color: #686868;
+  display: block;
+  font-size: 10px;
+  font-weight: normal;
+  margin-top: 2px;
+}
+.project-container .project-description .project-details {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #606060;
+}
+.project-container .project-description .project-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+.project-container .project-description .project-icons .icon {
+  width: 100%;
+  margin: 0 0.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+.project-container .project-description .project-icons .icon i.fa-js-square {
+  color: #fddf17;
+}
+.project-container .project-description .project-icons .icon i.fa-react {
+  color: #61dafb;
+}
+.project-container .project-description .project-icons .icon i,
+.project-container .project-description .project-icons .icon img {
+  font-size: 27px;
+  width: 27px;
+}
+.project-container .project-description .project-icons .icon i.fa-angular {
+  color: #de002d;
+}
+.project-container .project-description .project-icons .icon i.fa-sass {
+  color: #61dafb;
+}
+.project-container .project-description .project-icons .icon p {
+  color: #777;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.project-container .project-presentation {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-container .project-presentation video {
+  width: 100%;
+  border-radius: 5px;
+}
+.project-container .project-presentation .project-media .project-sideshow-container {
+  border: 3px solid #d8d8d8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+.project-container .project-presentation .project-media .project-sideshow-container .project-slideshow-body {
+  margin: 1% auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.project-container .project-presentation .project-media .project-sideshow-container .project-slideshow-body .project-image {
+  width: 90%;
+  border-radius: 3px;
+  display: block;
+}
+.project-container .project-presentation .project-media .project-sideshow-container .project-info-container {
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 2%;
+  width: 90%;
+  margin: 1% auto;
+}
+.project-container .project-presentation .project-media .project-sideshow-container .project-info-container p {
+  color: #080808;
+  font-size: 1.2rem;
+}
+.project-container .project-presentation .project-media .project-sideshow-container .project-pagination {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.project-container .project-presentation .project-media .project-sideshow-container .project-pagination .pag-dot {
+  display: block;
+  background-color: #b7b7b7;
+  border-radius: 50px;
+  width: 10px;
+  height: 10px;
+}
+.project-container .project-presentation .project-media .project-sideshow-container .project-pagination.pag-dot-active {
+  background-color: #22b28e;
+}/*# sourceMappingURL=project.css.map */

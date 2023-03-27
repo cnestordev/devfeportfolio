@@ -1,0 +1,21 @@
+.sections {
+  background-color: #f8f8ff;
+  padding: 50px 0;
+}
+.sections h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sections.dark {
+  background-color: #121212;
+}
+.sections.dark h2 {
+  color: #f1f1f1;
+}
+
+.page-padding {
+  padding-right: 200px;
+  padding-left: 200px;
+}/*# sourceMappingURL=shared.css.map */

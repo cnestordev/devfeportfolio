@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Nestor Portfolio</title>
-    <link rel="stylesheet" href="../public/styles.css" />
     <link rel="stylesheet" href="../public/reset.css" />
+    <link rel="stylesheet" href="../public/styles/navbar.css" />
+    <link rel="stylesheet" href="../public/styles/shared.css" />
+    <link rel="stylesheet" href="../public/styles/landing.css" />
+    <link rel="stylesheet" href="../public/styles/skills.css" />
+    <link rel="stylesheet" href="../public/styles/experience.css" />
+    <link rel="stylesheet" href="../public/styles/project.css" />
+    <link rel="stylesheet" href="../public/styles/other.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,19 +23,16 @@
       href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="../src/assets/nestor-ico.ico">
+    <link rel="icon" type="image/x-icon" href="../src/assets/nestor-ico.ico" />
     <script
       src="https://kit.fontawesome.com/58ff903b9e.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="../public/index.js"
-      defer
-    ></script>
+    <script src="../public/index.js" defer></script>
   </head>
   <body>
     <section class="header">
-      <nav class="navbar page-margin">
+      <nav class="navbar page-padding">
         <div class="nav-logo">
           <div class="nestor-logo"></div>
         </div>
@@ -44,7 +47,7 @@
     </section>
 
     <section class="landing">
-      <div class="intro">
+      <div class="intro page-padding">
         <h1>Hi! I'm Nestor.</h1>
         <h2>A Full-Stack Web Developer</h2>
         <button>Learn More</button>
@@ -52,7 +55,7 @@
     </section>
 
     <section class="sections skills-section">
-      <div class="page-margin">
+      <div class="page-padding">
         <h2>Tech Skills</h2>
 
         <div class="skills-container">
@@ -108,8 +111,8 @@
       </div>
     </section>
 
-    <section class="sections experience-section">
-      <div class="page-margin">
+    <section class="sections experience-section dark">
+      <div class="page-padding">
         <h2>Experience</h2>
         <div class="project-container">
           <div class="project-description">
@@ -166,11 +169,11 @@
     </section>
 
     <section class="sections project-section">
-      <div class="page-margin">
+      <div class="page-padding">
         <h2>Projects</h2>
         <div class="project-container">
           <div class="project-description">
-            <div class="project-info-header light">
+            <div class="project-info-header dark">
               <p>Threaddit<span>Aug 2021 - Aug 2022</span></p>
             </div>
             <div class="project-details">
@@ -205,20 +208,53 @@
           </div>
           <div class="project-presentation">
             <div class="project-media">
-              <div id="project-slideshow-container" class="project-sideshow-container">
+              <div
+                id="project-slideshow-container"
+                class="project-sideshow-container"
+              >
                 <div class="project-slideshow-body">
-                  <img id="project-image" class="project-image"
+                  <img
+                    id="project-image"
+                    class="project-image"
                     src="../src/assets/post.png"
                   />
-                    <i className="fas fa-arrow-right"></i>
-                  </div>
-                  <div class="project-info-container">
-                    <p id="project-info"></p>
-                  </div>
-                  <div id="project-pagination" class="project-pagination"></div>
+                  <i className="fas fa-arrow-right"></i>
                 </div>
+                <div class="project-info-container">
+                  <p id="project-info"></p>
+                </div>
+                <div id="project-pagination" class="project-pagination"></div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sections projects-section dark">
+      <div class="page-padding">
+        <h2>Other Projects</h2>
+        <div class="projects-container">
+          <div class="other-project-container">
+            <div class="other-project-header">
+              <h3>Reddit Posts</h3>
+              <p>View Reddit posts from any domain</p>
+            </div>
+            <img src="../src/assets/reddit.gif" alt="project image" />
+          </div>
+          <div class="other-project-container">
+            <div class="other-project-header">
+              <h3>Budget Sharing</h3>
+              <p>track of expenses shared by roommates</p>
+            </div>
+            <img src="../src/assets/accounting.gif" alt="project image" />
+          </div>
+          <div class="other-project-container">
+            <div class="other-project-header">
+              <h3>Avatar Inputs</h3>
+              <p>Replaces radio buttons with avatar icons</p>
+            </div>
+            <img src="../src/assets/avatar.gif" alt="project image" />
           </div>
         </div>
       </div>

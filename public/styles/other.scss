@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  .other-project-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    .other-project-header {
+      padding-bottom: 10px;
+      h3 {
+        font-size: 22px;
+        color: $color_1;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      p {
+        color: $color_3;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
