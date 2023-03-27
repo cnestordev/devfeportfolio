@@ -119,6 +119,15 @@ function stopAutoPagination() {
   clearInterval(start);
 }
 
+function toggleMobileMenu() {
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
+  btn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "none" ? "flex" : "none";
+  });
+}
+
 addPagination();
 detectSwipe();
 startAutoSlide(0);
+toggleMobileMenu();

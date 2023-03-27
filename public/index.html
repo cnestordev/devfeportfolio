@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Nestor Portfolio</title>
     <link rel="stylesheet" href="../public/reset.css" />
@@ -33,6 +33,42 @@
     <script src="../public/index.js" defer></script>
   </head>
   <body>
+    <div id="mobile-menu" class="mobile-menu">
+      <ul class="mobile-list">
+        <li
+          onclick="window.open('https://docs.google.com/document/d/e/2PACX-1vSKp3o9-CdWEj55FbyQviDwgbtHuPgnxhpvGRKFTgjMHNnzAVPZWFs3XrnUKAm_i78I_6gU8JJtxBhr/pub', '_blank')"
+          class="mobile-item"
+        >
+          <i class="far fa-file"></i>
+          <p>resume</p>
+        </li>
+        <li
+          onclick="window.open('https://github.com/cnestordev', '_blank')"
+          class="mobile-item"
+        >
+          <i class="fab fa-github"></i>
+          <p><span class="gradient-text">/</span>cnestordev</p>
+        </li>
+        <li
+          onclick="window.open('https://www.linkedin.com/in/cnestordev', '_blank')"
+          class="mobile-item"
+        >
+          <i class="fab fa-linkedin"></i>
+          <p>
+            <span class="gradient-text">/</span>in<span class="gradient-text"
+              >/</span
+            >cnestordev
+          </p>
+        </li>
+        <li
+          onclick="location.href='mailto:nestorcdev@gmail.com';"
+          class="mobile-item"
+        >
+          <i class="far fa-envelope"></i>
+          <p>nestorcdev@gmail.com</p>
+        </li>
+      </ul>
+    </div>
     <section class="header">
       <nav class="navbar page-padding">
         <div class="nav-logo">
@@ -55,11 +91,8 @@
         <div class="logo">
           <div class="nestor-logo"></div>
         </div>
-        <div
-          onclick="window.open('https://docs.google.com/document/d/e/2PACX-1vSKp3o9-CdWEj55FbyQviDwgbtHuPgnxhpvGRKFTgjMHNnzAVPZWFs3XrnUKAm_i78I_6gU8JJtxBhr/pub', '_blank')"
-          class="menu"
-        >
-          <span class="text-gradient">Resume</span>
+        <div id="mobile-menu-btn" class="menu">
+          <i class="fas fa-bars"></i>
         </div>
       </nav>
     </section>
